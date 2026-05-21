@@ -1,16 +1,21 @@
-# React + Vite
+# DriveFleet - Premium Car Rental Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚗 Live Site: https://drivefleet-client-navy.vercel.app
 
-Currently, two official plugins are available:
+## About DriveFleet
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+DriveFleet is a full-stack car rental platform where users can explore available vehicles, view detailed car information, make bookings, and manage their own car listings. Built with React, Node.js, Express, and MongoDB.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔐 **Secure Authentication** — Register and login with email/password or Google OAuth. JWT tokens stored in HTTPOnly cookies for maximum security.
+- 🚘 **Car Listings** — Browse, search, and filter cars by name or type. View full details including seat capacity, pickup location, and daily price.
+- 📋 **Booking Management** — Book any available car instantly with driver options and special notes. View and cancel your bookings anytime.
+- 🛠️ **Car Management** — Add your own car listings, update details like price, availability, and description, or delete listings with confirmation.
+- 🌗 **Theme Toggle** — Switch between light and dark mode. Preference is saved across sessions.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend:** React, Vite, Tailwind CSS, Framer Motion, React Router  
+**Backend:** Node.js, Express, MongoDB, Mongoose, JWT  
+**Deployment:** Vercel (client), Render (server)
