@@ -47,6 +47,26 @@ const Navbar = () => {
               {l.label}
             </NavLink>
           ))}
+          {user && (
+            <>
+              <NavLink
+                to="/add-car"
+                className={({ isActive }) =>
+                  `text-sm font-medium transition-colors duration-200 ${isActive ? "text-primary" : "text-gray-300 hover:text-white"}`
+                }
+              >
+                Add Car
+              </NavLink>
+              <NavLink
+                to="/my-bookings"
+                className={({ isActive }) =>
+                  `text-sm font-medium transition-colors duration-200 ${isActive ? "text-primary" : "text-gray-300 hover:text-white"}`
+                }
+              >
+                My Bookings
+              </NavLink>
+            </>
+          )}
         </div>
 
         {/* Right Side */}
